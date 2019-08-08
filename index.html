@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
     <link rel="stylesheet" href="assets/css/ivy.css">
     <title>Ivy CSS UI Kit</title>
 
@@ -40,8 +41,21 @@
             margin-bottom: 20px;
         }
 
+        .content .control {
+            margin: 10px 10px 10px 0;
+        }
+
+        .content .badge {
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+
         section {
             margin-top: 7%;
+        }
+
+        textarea {
+            height: 200px;
         }
     </style>
 </head>
@@ -52,7 +66,7 @@
         <h5>Bienvenue sur Ivy UI Kit !</h5>
         <p>Ce n'est pas un nouveau Bootstrap. Comme ça toi et moi on est fixé dès le départ. Si tu veux une librairie
             complète qui fournie navbar, footer, et tout le tralala, va prier et ce sera un bon début; mais si tu veux
-            juste pouvoir bien organisée tes pages en grilles(ou en lignes et colonnes plutôt) tout en ayant des
+            juste pouvoir bien organiser tes pages en grilles(ou en lignes et colonnes plutôt) tout en ayant des
             composants visuels attrayants(le style old school c'est la base, on pisse à la raie de Material, Flat et
             tout ces fdp), tu es au bon endroit. Alors installe toi mon poto, après avoir installé la librairie bien-sûr
             et pratique le meilleur copier/coller au monde.</p>
@@ -82,7 +96,53 @@
         <h5>Forms & Inputs</h5>
 
         <div class="content">
-
+            <form action="">
+                <div class="row" style="display: flex; flex-wrap: wrap">
+                    <div class="control">
+                        <label for="#input">Normal input field</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="control">
+                        <label for="#input">Focused input field</label>
+                        <input type="text" class="form-control" autofocus>
+                    </div>
+                    <div class="control">
+                        <label for="#input">Entered input field</label>
+                        <input type="text" class="form-control" value="Hello, world.">
+                    </div>
+                    <div class="control">
+                        <label for="#input">Disabled input field</label>
+                        <input type="text" class="form-control" value="This is a text." disabled>
+                    </div>
+                    <div class="control">
+                        <label for="#input">Error input field</label>
+                        <input type="text" class="form-control input-error">
+                    </div>
+                    <div class="control">
+                        <label for="">Select field</label>
+                        <select name="" id="">
+                            <option value="">Choose something</option>
+                            <option value="">Because this is select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="control">
+                        <label for="">Textarea</label>
+                        <textarea class="u-full-width" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <h6>Badges</h6>
+                    <div class="content">
+                        <span class="badge">Simple badge</span>
+                        <span class="badge badge-success">Success badge</span>
+                        <span class="badge badge-info">Info badge</span>
+                        <span class="badge badge-warning">Warning badge</span>
+                        <span class="badge badge-error">Error badge</span>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 </div>

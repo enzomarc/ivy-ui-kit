@@ -16,6 +16,8 @@
 - Links
 - Buttons
 - Forms
+- Badges
+- Cards
 - Lists
 - Code
 - Tables
@@ -260,6 +262,32 @@ input[type="button"].button-dark {
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Color changes for input with value */
+input[type="email"][value],
+input[type="number"][value],
+input[type="search"][value],
+input[type="text"][value],
+input[type="tel"][value],
+input[type="url"][value],
+input[type="password"][value],
+textarea[value],
+select[value] {
+  background-color: #fff;
+  border: 1px solid #e0e8ef; }
+/* Color changes for input disabled with value */
+input[type="email"][value][disabled],
+input[type="number"][value][disabled],
+input[type="search"][value][disabled],
+input[type="text"][value][disabled],
+input[type="tel"][value][disabled],
+input[type="url"][value][disabled],
+input[type="password"][value][disabled],
+textarea[value][disabled],
+select[value][disabled] {
+  color: #b2b8bc;
+  background-color: #f9fafc;
+  border: 1px solid #e0e8ef; }
+/* Default styles */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -269,13 +297,27 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
+  font-size: 14px;
   height: 38px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
+  padding: 6px 12px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #f2f5f9;
+  border: 1px solid #f2f5f9;
   border-radius: 4px;
   box-shadow: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: all .3s }
+/* Error input fields */
+input[type="email"].input-error,
+input[type="number"].input-error,
+input[type="search"].input-error,
+input[type="text"].input-error,
+input[type="tel"].input-error,
+input[type="url"].input-error,
+input[type="password"].input-error,
+textarea.input-error,
+select.input-error {
+  background: #fff;
+  border: solid 1.5px #eb251e; }
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
@@ -301,13 +343,16 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  background: #fff;
+  border: 1.5px solid #0c81e7;
   outline: 0; }
 label,
 legend {
+  color: #5a636a;
   display: block;
   margin-bottom: .5rem;
-  font-weight: 600; }
+  font-weight: 400;
+  font-size: 14px; }
 fieldset {
   padding: 0;
   border-width: 0; }
@@ -318,6 +363,29 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal; }
+
+
+/* Badges
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.badge {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px;
+  border-radius: 4px;
+  color: #788086;
+  background: #e4e6e9; }
+.badge.badge-success {
+  color: #14be38;
+  background: #ecf9ee; }
+.badge.badge-error {
+  color: #ed261e;
+  background: #f9ecec; }
+.badge.badge-info {
+  color: #1e8ef1;
+  background: #eceef9; }
+.badge.badge-warning {
+  color: #c1af0f;
+  background: #f9f9ec; }
 
 
 /* Lists
