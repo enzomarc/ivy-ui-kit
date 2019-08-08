@@ -388,6 +388,90 @@ label > .label-body {
   background: #f9f9ec; }
 
 
+/* Cards
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.card {
+    padding: 40px;
+    background: #fbfbfb;
+    border-radius: 6px;
+    box-shadow: 0px 0.5px 1px 0px rgba(217, 217, 217, 0.5);
+}
+.card.card-transparent {
+    background: transparent;
+}
+.card.card-primary {
+    background: #eceef9;
+    color: #1e8ef1;
+}
+.card.card-primary p {
+    color: #1e8ef1;
+}
+.card.card-primary a {
+    color: #1e8ef1;
+}
+.card.card-success {
+    background: #ecf9ee;
+    color: #14be38;
+}
+.card.card-success p {
+    color: #14be38;
+}
+.card.card-success a {
+    color: #14be38;
+}
+.card.card-error {
+    background: #f9ecec;
+    color: #ed261e;
+}
+.card.card-error p {
+    color: #ed261e;
+}
+.card.card-error a {
+    color: #ed261e;
+}
+.card.card-warning {
+    background: #f9f9ec;
+    color: #c1af0f;
+}
+.card.card-warning p {
+    color: #c1af0f;
+}
+.card.card-warning a {
+    color: #c1af0f;
+}
+.card.card-bordered {
+    border: solid 1px #eaeaea;
+}
+.card .card-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+.card .card-header.bordered {
+    border-bottom: solid 1px #eaeaea;
+}
+.card-header .card-title {
+    font-size: 18px;
+    flex: 4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card-title h5 {
+    margin: 0;
+}
+.card-header .card-controls {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.card .card-body {
+    font-size: 13px;
+    color: #999;
+}
+
+
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
