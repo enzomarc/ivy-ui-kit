@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,24 +19,72 @@
             padding: 40px;
             background: #fbfbfb;
             border-radius: 6px;
+            box-shadow: 0px 0.5px 1px 0px rgba(217, 217, 217, 0.5);
         }
 
-        .header h5 {
+        .container h5 {
             font-size: 18px;
         }
 
         .header p {
             font-size: 13px;
-            color: #666;
+            color: #999;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .content button {
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-top: 7%;
         }
     </style>
 </head>
 <body>
 <div class="container">
+    <!-- Header -->
     <div class="row header">
-        <h5>Welcome on Ivy UI Kit !</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem delectus deserunt error facilis harum impedit minima nam praesentium quisquam sapiente, sit sunt ullam ut veniam voluptatem voluptates voluptatibus voluptatum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda debitis dolor doloremque eum iste minus modi molestiae nisi nulla, obcaecati perferendis quo, repellat repellendus sit sunt, vel velit vitae voluptas.</p>
+        <h5>Bienvenue sur Ivy UI Kit !</h5>
+        <p>Ce n'est pas un nouveau Bootstrap. Comme ça toi et moi on est fixé dès le départ. Si tu veux une librairie
+            complète qui fournie navbar, footer, et tout le tralala, va prier et ce sera un bon début; mais si tu veux
+            juste pouvoir bien organisée tes pages en grilles(ou en lignes et colonnes plutôt) tout en ayant des
+            composants visuels attrayants(le style old school c'est la base, on pisse à la raie de Material, Flat et
+            tout ces fdp), tu es au bon endroit. Alors installe toi mon poto, après avoir installé la librairie bien-sûr
+            et pratique le meilleur copier/coller au monde.</p>
+        <p><i>-- By <a class="link" href="https://github.com/enzomarc" target="_blank">Marc Enzo</a></i></p>
     </div>
+
+    <!-- Buttons -->
+    <section class="row buttons">
+        <h5>Buttons</h5>
+
+        <div class="content">
+            <button>This is a button</button>
+            <button class="button button-primary">This is a button</button>
+            <button class="button button-danger">This is a button</button>
+            <button class="button button-warning">This is a button</button>
+            <button class="button button-success">This is a button</button>
+            <button class="button button-dark">This is a button</button>
+            <button disabled>This is a button</button>
+            <button class="button button-primary" disabled>This is a button</button>
+            <button class="button button-danger" disabled>This is a button</button>
+            <button class="button button-dark" disabled>This is a button</button>
+        </div>
+    </section>
+
+    <!-- Forms -->
+    <section class="row forms">
+        <h5>Forms & Inputs</h5>
+
+        <div class="content">
+
+        </div>
+    </section>
 </div>
 </body>
 </html>
